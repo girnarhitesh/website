@@ -1,0 +1,171 @@
+/* Navigation Bar */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: black;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(71, 70, 70, 0.43);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Hide Navbar */
+.nav.hide {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+/* Show Navbar on Scroll */
+.nav.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar Links */
+.nav h2 {
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Center Alignment */
+.center {
+    flex: 1;
+    text-align: center;
+}
+
+/* Mobile Menu Button */
+.menu-btn {
+    display: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    text-align: right;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.mobile-menu h2 {
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    /* Hide Normal Links */
+    .nav h2 {
+        display: none;
+    }
+
+    /* Show Menu Button */
+    .menu-btn {
+        display: block;
+    }
+
+    /* Show Mobile Menu when active */
+    .mobile-menu.active {
+        display: flex;
+    }
+}
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #222;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar .close-icon {
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+/* Popup Modal */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close-popup {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+

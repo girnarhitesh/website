@@ -1,0 +1,73 @@
+/* Footer Container */
+.FooterContainer {
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Mobile-friendly stacking */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer Heading */
+h1 {
+    color: rgb(244, 236, 236);
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Footer Items (Navigation Links or Info) */
+.Footeritms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 7rem;
+    flex-wrap: wrap; /* Allows items to wrap on small screens */
+}
+
+/* Footer Links */
+p {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Footer Links */
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+a:hover {
+    
+    color: #fff;
+   
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .FooterContainer {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .Footeritms {
+        flex-direction: column; /* Stack items vertically */
+        gap: 2rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}

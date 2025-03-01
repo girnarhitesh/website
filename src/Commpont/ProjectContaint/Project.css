@@ -1,0 +1,194 @@
+/* Project Container */
+.projectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: black;
+}
+
+/* Left & Right Image Containers */
+.projectItem {
+    flex: 1;
+    max-width: 40%;
+}
+
+.projectItem img {
+    width: 100%;
+    height: 80vh;
+    /* border-radius: 10px; */
+    object-fit: cover;
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+/* Hover Effect */
+/* .projectItem img:hover {
+    transform: scale(1.05);
+} */
+
+/* Content Section */
+.projectContent {
+    flex: 1;
+    text-align: center;
+    color: white;
+    max-width: 50%;
+    line-height: 30px;
+}
+
+.projectContent h1 {
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f5f4f1;
+}
+
+.projectContent p {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.projectContent span {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .projectContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projectItem {
+        max-width: 90%;
+    }
+
+    .projectContent {
+        max-width: 100%;
+    }
+}
+
+/* Button Container  */
+ .icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+} 
+
+/* Button Styling */
+.animated-btn {
+    border: 2px solid wheat;
+    border-radius: 50%;
+    height: 5vh;
+    width: 5vh;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Hover Effect */
+.animated-btn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Click Animation - Move Down */
+.move-down {
+    transform: translateY(50px);
+    /* Button neeche slide hoga */
+}
+/* projectcontainer  */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+}
+
+/* Each Project Box */
+.projectcont {
+    position: relative;
+    /* background: #222; */
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Wrapper */
+.projectcola {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Image Styling */
+.projectcola img {
+    width: 70vh;
+    height: 60vh;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Image */
+.projectcola img:hover {
+    transform: scale(1.05);
+}
+
+/* Fixed Position for P */
+.projectcont p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/* Content Section */
+.Contant {
+    padding: px; 
+}
+
+/* Content Styling */
+span {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: white;
+    display: block;
+}
+
+/* Responsive: Two Rows on Desktop */
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive: One Column on Mobile */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projectcont p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,282 @@
+/* Main About Page Container */
+.AboutpageContaner {
+    display: flex;
+    align-items: flex-end;
+    /* Moves child elements to the bottom */
+    justify-content: space-between;
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    padding: 0 10%;
+}
+
+/* Left Content Styling */
+.leftContant {
+    color: white;
+    max-width: 40%;
+}
+
+.leftContant h1 {
+    font-size: 15px;
+    font-weight: 100;
+
+}
+
+.leftContant p {
+    font-size: 15px;
+    width: 30vh;
+}
+
+/* Image Container */
+.AboutimgContaner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* text-align: center; */
+    /* width: 40%; */
+}
+
+/* Centering Image */
+.AboutimgContaner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.AboutimgContaner img {
+    height: 90vh;
+    /* Limits height without cropping */
+    max-width: 100%;
+    /* Ensures it fits within the container */
+    object-fit: contain;
+    /* Ensures the full image appears without being cropped */
+}
+
+
+/* About Me Text */
+.AboutimgContaner h2 {
+    color: white;
+    top: 30vh;
+    font-size: 1rem;
+    position: absolute;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.AboutimgContaner p {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    position: absolute;
+    text-transform: none;
+    line-height: 4rem;
+    width: 105vh;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .AboutpageContaner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+        height: auto;
+    }
+
+    .leftContant {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .leftContant h1 {
+        font-size: 1.8rem;
+    }
+
+    .leftContant p {
+        font-size: 1.1rem;
+        width: 90%;
+    }
+
+    .AboutimgContaner {
+        width: 100%;
+    }
+
+    .AboutimgContaner img {
+        width: 90%;
+        max-height: 60vh;
+    }
+
+    .AboutimgContaner h2 {
+        font-size: 1rem;
+        top: 20vh;
+    }
+
+    .AboutimgContaner p {
+        font-size: 1.8rem;
+        width: 80%;
+        top: 50%;
+        line-height: inherit;
+    }
+}
+
+
+/* Extra Small Devices (Mobile) */
+@media (max-width: 600px) {
+    .AboutpageContaner {
+        padding: 5%;
+    }
+
+    .leftContant h1 {
+        font-size: 1.5rem;
+    }
+
+    .leftContant p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .AboutimgContaner img {
+        width: 100%;
+        height: auto;
+        max-height: 50vh;
+    }
+
+    .AboutimgContaner h2 {
+        font-size: 0.9rem;
+        top: 15vh;
+    }
+
+    .AboutimgContaner p {
+        font-size: 1.5rem;
+        top: 50%;
+        width: 90%;
+    }
+
+    .heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .Aboutperegraph p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* AboutpageContantContainer ............................. */
+
+/* My Story Section */
+.AboutpageContantContainer {
+    background-color: #111;
+    color: white;
+    padding: 5vh 10%;
+    text-align: center;
+}
+
+/* Heading Styling */
+.heading h1 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/* Main Paragraph */
+.Aboutperegraph p {
+    width: 60%;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+/* Span Container for Additional Content */
+.SpanContant {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual Span Styling */
+.SpanContant span {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: start;
+    max-width: 500px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Aboutperegraph p {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+    .SpanContant {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SpanContant span {
+        text-align: center;
+        max-width: 90%;
+    }
+}
+
+/* Extra Small Devices (Mobile) */
+@media (max-width: 600px) {
+    .heading h1 {
+        font-size: 1.3rem;
+    }
+
+    .Aboutperegraph p {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .SpanContant {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .SpanContant span {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* SliderContainers  */
+.SliderContainers {
+    background-color: #111;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.SliderContainer, .Slider2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-out; /* Smooth transition */
+}
+
+.Container1, .Container2, .Container3, .Container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.Container1 img, .Container2 img, .Container3 img, .Container4 img {
+    height: 60vh;
+    width: 70vh;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+}

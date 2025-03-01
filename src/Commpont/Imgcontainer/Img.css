@@ -1,0 +1,105 @@
+/* Main Image Container */
+.imgcontainer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+    /* transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d; */
+}
+
+/* Header inside imgcontainer */
+.imgcontainer h1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 90px 50px;
+    font-weight: 100;
+    color: #f5efef;
+    letter-spacing: 4px;
+}
+
+/* Flex Container for Image */
+.imgcont {
+    display: flex;
+    flex-direction: column; /* Stack image and text */
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 🖼️ Image Styling */
+.imgcont img {
+    height: 70vh;
+    width: 70vh;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 🚀 Hover Effect */
+.imgcont img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    z-index: 999;
+}
+
+
+.contant {
+    margin: 20px;
+}
+
+/* Content Below Image */
+span {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white;
+    display: block;
+    margin: 20px 20px;
+}
+
+p {
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+/* Custom BR Styling (Not necessary) */
+hr {
+    background-color: rgba(0, 0, 0, 0.202);
+    border: 1px solid white;
+    height: 0px;
+    width: 100%;
+}
+
+/* .btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.btn1 button {
+    width: 100%;
+    border-radius: 50%;
+   
+    background-color: black;
+    color: white;
+    border: 2px solid rgba(69, 66, 66, 0.658);
+    font-size: 1rem;
+    cursor: pointer;
+    transition:
+        border 0.4s ease-in-out,
+        transform 0.4s ease-in-out,
+        background-color 0.4s ease-in-out;
+}
+
+button:hover {
+    border: 2px solid rgba(148, 133, 133, 0.739);
+    transform: scale(1.1);
+} */

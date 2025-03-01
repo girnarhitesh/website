@@ -1,0 +1,131 @@
+/* Main Container */
+.AnimationContainer {
+    width: 100%;
+    height: 80vh;
+    background-color: #000000;
+    padding: 10vh;
+    color: white;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    line-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+/* Button Container */
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Button Styling */
+.buttons button {
+    border-radius: 50%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 245, 245);
+    height: 8vh;
+    width: 20vh;
+    text-transform: uppercase;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 
+        /* background-color 0.3s ease-in-out, */
+        /* color 0.3s ease-in-out, */
+        transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.buttons button:hover {  
+    color: rgb(252, 247, 247);    
+    transform: scale(1.1);  
+}
+
+/* Heading */
+.AnimationContainer h1 {
+    color: rgb(251, 241, 241);
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+.AnimationContainer p {
+    color: rgb(245, 240, 240);
+    font-size: 1.2rem;
+    max-width: 70%;
+    text-align: end;
+}
+
+/* Span */
+.AnimationContainer span {
+    color: rgb(239, 235, 235);
+    font-weight: bold;
+}
+
+/* Responsive Design for Tablets & Mobile */
+@media screen and (max-width: 1024px) {
+    .AnimationContainer {
+        height: auto;
+        padding: 5vh 5vw;
+        line-height: 2.5rem;
+    }
+
+    .AnimationContainer h1 {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .AnimationContainer p {
+        font-size: 1rem;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .AnimationContainer {
+        padding: 5vh 5vw;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .AnimationContainer h1 {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .AnimationContainer p {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .AnimationContainer {
+        padding: 4vh 4vw;
+        height: auto;
+        line-height: 1.8rem;
+    }
+
+    .AnimationContainer h1 {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .AnimationContainer p {
+        font-size: 0.66rem;
+        max-width: 95%;
+    }
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(to right, black 50%, rgb(0, 0, 0) 50%);
+    /* Splitting BG */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Left Section (Text Content) */
+.hero-left {
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh 10vh;
+    gap: 20px;
+    /* Adjust spacing between elements */
+}
+
+
+.hero-left h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    /* Increase spacing below the heading */
+}
+
+.hero-left p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ccc;
+    margin-bottom: 15px;
+    /* Adjust as needed */
+}
+
+
+/* Right Section (Image) */
+.hero-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.hero-right img {
+    width: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        background: black;
+        /* Full black for small screens */
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+        padding: 5vh 5vw;
+    }
+
+    .hero-right {
+        padding: 5vh 0;
+    }
+
+    .hero-right img {
+        width: 80%;
+    }
+}
+
+.btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+    color: white;
+    background-color: black;
+    position: absolute;
+    border: 2px solid black;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* Hover Effect: Scale & Translate */
+.btn button:hover {
+    border: 2px solid white;
+    transform: scale(1.4) translateY(0.3s); /* Slightly enlarges and moves up */
+}
+ 
+ 
