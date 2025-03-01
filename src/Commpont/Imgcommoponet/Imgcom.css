@@ -34,7 +34,7 @@
 /* Circular Image */
 .imgcomponet img {
     width: 15vh;
-    height:15vh;
+    height: 15vh;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid white;

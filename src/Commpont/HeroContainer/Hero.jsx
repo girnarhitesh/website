@@ -1,21 +1,21 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";  
+import { useNavigate } from "react-router-dom";
 import "./Hero.css";
 import About from "../AboutContainer/About";
 import Slider from "../SliderimgContainer/Slider";
-import Imgcom from "../imgcommoponet/imgcom";
 import Img from "../Imgcontainer/Img";
+import Imgcom from"../Imgcommoponet/Imgcom";
 import Animation from "../AnimationContainer/Animation";
 
 function Hero() {
-    const navigate = useNavigate();  
+    const navigate = useNavigate();
 
     useEffect(() => {
         window.scrollTo(0, 0);  // Ensures the page always opens from the top
     }, []);
 
     const goToProjects = () => {
-        navigate("/projects");  
+        navigate("/projects");
     };
 
     return (
@@ -27,7 +27,7 @@ function Hero() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliqu adapi.</p>
                 </div>
                 <div className="btn">
-                    <button onClick={goToProjects}>MY WORK</button>  
+                    <button onClick={goToProjects}>MY WORK</button>
                 </div>
 
                 {/* Right Section */}

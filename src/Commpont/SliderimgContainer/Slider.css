@@ -151,7 +151,7 @@ p {
 
 /* responcive  */
 /* 📱 Mobile & Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .Sliderimg {
         flex-direction: column-reverse; /* Moves image to top, content below */
         height: auto;
@@ -185,7 +185,7 @@ p {
 }
 
 /* 📱 Extra Small Screens (Phones) */
-@media (max-width: 480px) {
+@media (max-width: 900px) {
     .Slidercontant,
     .Slidercontants {
         text-align: center;
